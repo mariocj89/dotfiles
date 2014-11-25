@@ -1,0 +1,37 @@
+[user]
+        name = Mario Corchero
+        email = mariocj89@gmail.com
+[core]
+        editor = vim
+        excludesfile = ~/.gitignore
+[help]
+        autocorrect = 1
+[color]
+        ui = always
+[color "branch"]
+        current = yellow bold
+        local = green bold
+        remote = cyan bold
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+[color "status"]
+        added = green bold
+        changed = yellow bold
+        Auntracked = red bold
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[alias]
+        ci = commit
+        st = status -s
+        co = checkout
+
+[credential]
+	helper = cache --timeout=36000
+[push]
+	default = matching
