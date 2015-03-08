@@ -1,0 +1,13 @@
+#!/bin/bash -e
+DIR=`pwd`
+BACK_UP_DIR=~/.bu/home-files/
+mkdir -p $BACK_UP_DIR
+
+#backout prev files
+for i in `ls -ap | grep -v /`; do ls ~/$i && mv ~/$i $BACK_UP_DIR; done;
+
+#create symlinks
+for i in `ls -ap | grep -v /`; do
+    echo "linking '$i' ..."
+    ln -s $DIR/$i ~/$i
+done
