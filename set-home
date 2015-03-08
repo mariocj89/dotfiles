@@ -7,7 +7,7 @@ mkdir -p $BACK_UP_DIR
 for i in `ls -ap | grep -v /`; do ls ~/$i && mv ~/$i $BACK_UP_DIR; done;
 
 #create symlinks
-for i in `ls -ap | grep -v /`; do
+for i in `ls -ap | grep -v / | grep -v set-home`; do
     echo "linking '$i' ..."
     ln -s $DIR/$i ~/$i
 done
