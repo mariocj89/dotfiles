@@ -36,6 +36,7 @@ done
 alias sqlplus='rlwrap sqlplus'
 alias startTeamViewerDaemon='sudo teamviewer --daemon start'
 
+alias psef="ps -ef | grep "
 
 #Env Variables
 
