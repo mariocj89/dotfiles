@@ -116,4 +116,4 @@ fi
 . ~/.bashrc.mario
 . ~/.bashenv.mario
 
-. .bash_propmt
+. ~/.bash_propmt
