@@ -1,5 +1,4 @@
-#Aliases
-alias cd..='cd ..'
+# Aliases
 alias ssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 alias psmy="ps uxf"
@@ -7,21 +6,19 @@ alias ls="ls --color=auto -F"
 alias ll="ls -lh"
 alias la="ll -a"
 alias less="less -R"
-alias quota="quota -s"
 alias du="du -h"
 alias c="clear"
+alias cd..='cd ..'
 alias ..="cd .."
-
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 #.1, .2, .3 para subir directorios
 dotSlash=""
@@ -32,11 +29,8 @@ do
     alias $baseName="cd ${dotSlash}"
 done
 
-
-alias sqlplus='rlwrap sqlplus'
-alias startTeamViewerDaemon='sudo teamviewer --daemon start'
-
 alias psef="ps -ef | grep "
 
-#Env Variables
+alias quota="quota -s"
 
+alias vi=vim

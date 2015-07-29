@@ -1,38 +1,41 @@
 [user]
-        name = Mario Corchero
-        email = mariocj89@gmail.com
+    name = Mario Corchero
+    email = mariocj89@gmail.com
 [core]
-        editor = vim
-        excludesfile = ~/.gitignore
+    editor = vim
+    excludesfile = ~/.gitignore
 [help]
-        autocorrect = 1
+    autocorrect = 1
 [color]
-        ui = always
+    ui = always
 [color "branch"]
-        current = yellow bold
-        local = green bold
-        remote = cyan bold
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
 [color "diff"]
-        meta = yellow bold
-        frag = magenta bold
-        old = red bold
-        new = green bold
-        whitespace = red reverse
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [color "status"]
-        added = green bold
-        changed = yellow bold
-        Auntracked = red bold
+    added = green bold
+    changed = yellow bold
+    Auntracked = red bold
 [diff]
-        tool = vimdiff
+    tool = vimdiff
 [difftool]
-        prompt = false
+    prompt = false
 [alias]
-        ci = commit
-        co = checkout
-        st = status -s
+    ci = commit
+    co = checkout
+    st = status -s
     topology =  log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
-
+    nopush = remote set-url --push origin no_push
+    clean-master = "!f() { git fetch origin && git co origin/master && git branch -D master && git co -b master }; f"
 [credential]
-	helper = cache --timeout=36000
+    helper = cache --timeout=36000
 [push]
-	default = matching
+    default = matching
+[pull]
+    default = simple
