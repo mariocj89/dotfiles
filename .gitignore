@@ -7,6 +7,10 @@
 *.o
 *.so
 *.pyc
+build
+00sourcelist
+*.d
+*.dd
 
 # Temporary files #
 ###################
@@ -27,6 +31,9 @@
 
 # Logs and databases #
 ######################
+test.log.*
+coverage.xml
+nosetests.xml
 *.log
 *.sqlite
 *.sqlite3
@@ -39,6 +46,11 @@ Icon?
 Thumbs.db
 
 
-# Eclipse Files #
-#################
+# IDE Files #
+#############
+.project
+.settings
+.cproject
+.idea/
+
 

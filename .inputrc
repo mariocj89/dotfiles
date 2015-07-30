@@ -1,2 +1,8 @@
 set editing-mode vi
 
+"\e[1~": beginning-of-line     # Home
+"\e[4~": end-of-line           # End
+"\e[5~": beginning-of-history  # PageUp
+"\e[6~": end-of-history        # PageDown
+"\e[3~": delete-char           # Delete
+"\e[2~": quoted-insert         # Insert

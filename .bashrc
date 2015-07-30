@@ -103,7 +103,8 @@ if ! shopt -oq posix; then
 fi
 
 
-#Personal config
+# Personal config
+[ -f ~/.bashrc.domain ] && . ~/.bashrc.domain
 . ~/.bashrc.mario
 . ~/.bash.alias
 . ~/.bash.env
