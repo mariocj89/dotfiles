@@ -102,6 +102,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# set title
+title() {
+  echo -ne "\033]0;"$1"\007"
+}
 
 # Personal config
 [ -f ~/.bashrc.domain ] && . ~/.bashrc.domain

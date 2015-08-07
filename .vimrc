@@ -12,6 +12,7 @@ syntax on
     "set wildmode=longest,list
     "set wildignore=*.swp,*.bak,*.pyc,*.class
     set title                       " change the terminal's title
+    let &titleold=$SHELL_TITLE        " change the terminal's title when exiting vim
     set noerrorbells                " don't beep
     set showcmd                     " show (partial) command in the last line of the screen
                                     "    this also shows visual selection info
@@ -33,7 +34,7 @@ syntax on
     set backspace=indent,eol,start  " allow backspacing over everything in insert mode
     set autoindent                  " always set autoindenting on
     set copyindent                  " copy the previous indentation on autoindenting
-    "set number                      " always show line numbers
+    set number                      " always show line numbers
                                     "    case-sensitive otherwise
     set smarttab                    " insert tabs on the start of a line according to
                                     "    shiftwidth, not tabstop
