@@ -29,7 +29,7 @@ do
     alias $baseName="cd ${dotSlash}"
 done
 
-alias psef="ps -ef | grep "
+ lias psef="ps -ef | grep -v ' grep '|  grep"
 
 alias quota="quota -s"
 
