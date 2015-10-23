@@ -41,5 +41,8 @@
     default = matching
 [pull]
     default = simple
+    rebase = true
 [include]
     path = ~/.gitconfig.domain
+[remote "*"]
+    prune = true
