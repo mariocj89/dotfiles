@@ -1,2 +1,2 @@
 # Extra bash configuration
-shopt -s autocd
+shopt -s autocd 2> /dev/null
