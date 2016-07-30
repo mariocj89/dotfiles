@@ -3,9 +3,8 @@ alias ssh='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
 alias psmy="ps uxf"
 
-# BDS doesnt support --color
+# BSD doesnt support --color
 ls --color >> /dev/null 2>&1  && alias ls="ls --color=auto -F" || alias ls="ls -GF"
-alias ls="ls -GF"
 alias ll="ls -lh"
 alias la="ll -a"
 alias less="less -R"
