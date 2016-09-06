@@ -52,5 +52,7 @@ Thumbs.db
 .settings
 .cproject
 .idea/
+.vagrant
+.venv
 
 
