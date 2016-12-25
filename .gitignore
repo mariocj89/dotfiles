@@ -54,5 +54,6 @@ Thumbs.db
 .idea/
 .vagrant
 .venv
+venv
 
 

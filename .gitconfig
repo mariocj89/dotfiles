@@ -7,7 +7,7 @@
 [help]
     autocorrect = 1
 [color]
-    ui = always
+    ui = auto
 [color "branch"]
     current = yellow bold
     local = green bold
