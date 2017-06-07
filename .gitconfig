@@ -33,7 +33,7 @@
     topology =  log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
     nopush = remote set-url --push origin no_push
     clean-master = "!git fetch origin && git co origin/master && git branch -D master && git co -b master && git branch --set-upstream-to=origin/master && git show master"
-    clean-merged = "!git branch --merged | grep -v master | xargs git branch -d"
+    clean-merged = "!git branch --no-color --merged | grep -v "master\|\*" | xargs git branch -d"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     diffword = diff --ignore-space-change --word-diff-regex=[^[:space:]]
 [credential]
