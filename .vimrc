@@ -43,6 +43,7 @@ syntax on
 
     set nolist                      " don't show invisible characters by default,
                                     " but it is enabled for some file types (see later)
+    set spell spelllang=en_us
 " }
 
 
