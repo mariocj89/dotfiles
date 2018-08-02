@@ -97,3 +97,6 @@ endfunction
 
 inoremap <tab> <c-r>=InsertTabWrapper ("forward")<cr>
 inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<cr>
+
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=red
