@@ -36,7 +36,7 @@
     clean-merged = "!git branch --no-color --merged | grep -v \"master\\|\\*\" | xargs git branch -d"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     diffword = diff --ignore-space-change --word-diff-regex=[^[:space:]]
-    pr = "!git fetch origin pull/$1/head:origin/pull/$1/head #"
+    pr = "!git fetch origin pull/$1/head:pr/$1 #"
 [credential]
     helper = cache --timeout=36000
 [push]
