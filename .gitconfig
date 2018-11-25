@@ -48,3 +48,5 @@
     path = ~/.gitconfig.domain
 [remote "*"]
     prune = true
+[rebase]
+	autosquash = true
