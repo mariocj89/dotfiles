@@ -49,12 +49,13 @@ Thumbs.db
 
 # IDE Files #
 #############
-.project
-.settings
 .cproject
 .idea/
+.project
+.settings
 .vagrant
 .venv
+.vscode/
 venv
 
 
