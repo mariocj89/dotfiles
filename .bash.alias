@@ -36,3 +36,7 @@ alias psef="ps -ef | grep -v ' grep '|  grep"
 alias quota="quota -s"
 
 alias vi=vim
+
+# tar related
+alias untar="tar -xf"
+alias untargz="tar -xzf"
