@@ -1,16 +1,18 @@
 # Compiled source #
 ###################
-*.com
 *.class
-*.dll
-*.exe
-*.o
-*.so
-*.pyc
-build
-00sourcelist
+*.com
 *.d
 *.dd
+*.dll
+*.egg-info
+*.exe
+*.o
+*.pyc
+*.so
+.mypy_cache
+00sourcelist
+build
 
 # Temporary files #
 ###################
