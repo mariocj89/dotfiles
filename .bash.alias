@@ -26,7 +26,7 @@ alias fgrep='fgrep --color=auto'
 dotSlash=""
 for i in 1 2 3 4
 do
-    dotSlash=${dotSlash}'../';
+    dotSlash="${dotSlash}'../';"
     baseName=".${i}"
     alias $baseName="cd ${dotSlash}"
 done
