@@ -98,5 +98,8 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper ("forward")<cr>
 inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<cr>
 
+" Open Python wheels as zip
+au BufReadCmd *.whl call zip#Browse(expand("<amatch>"))
+
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
