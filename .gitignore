@@ -2,7 +2,6 @@
 ###################
 *.class
 *.com
-*.d
 *.dd
 *.dll
 *.egg-info
