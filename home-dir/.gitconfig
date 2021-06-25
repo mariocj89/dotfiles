@@ -34,6 +34,7 @@
     topology =  log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
     nopush = remote set-url --push origin no_push
     clean-master = "!git fetch origin && git co origin/master && git branch -D master && git co -b master && git branch --set-upstream-to=origin/master && git show master"
+    clean-main = "!git fetch origin && git co origin/main && git branch -D main && git co -b main && git branch --set-upstream-to=origin/main && git show main"
     clean-merged = "!git-clean-merged-branches"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     diffword = diff --ignore-space-change --word-diff-regex=[^[:space:]]
@@ -55,3 +56,5 @@
     enable = true
 [url "bbgithub:"]
     insteadof = https://bbgithub.dev.bloomberg.com/
+[rerere]
+    enable = true
