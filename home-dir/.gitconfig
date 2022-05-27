@@ -58,3 +58,5 @@
     insteadof = https://bbgithub.dev.bloomberg.com/
 [rerere]
     enable = true
+[init]
+	defaultBranch = main
