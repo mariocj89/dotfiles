@@ -54,8 +54,6 @@
     autosquash = true
 [rerere]
     enable = true
-[url "bbgithub:"]
-    insteadof = https://bbgithub.dev.bloomberg.com/
 [rerere]
     enable = true
 [init]
