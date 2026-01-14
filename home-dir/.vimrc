@@ -23,7 +23,6 @@ syntax on
 
 " Editing behaviour {
     set pastetoggle=<F2>
-    set showmode
     set showmode                    " always show what mode we're currently editing in
     "set nowrap                      " don't wrap lines
     set tabstop=4                   " a tab is four spaces
@@ -58,7 +57,7 @@ syntax on
     set incsearch                   " show search matches as you type
     nnoremap / /\v
     vnoremap / /\v
-    colorschem desert
+    colorscheme desert
 " }
 
 
@@ -72,16 +71,18 @@ syntax on
                                     "    if there is only one window
     set cmdheight=2                 " use a status bar that is 2 rows high
     set statusline=%F%m\ %r\ Line:%l\/%L,%c\ %p%% " Format the statusline
-    set ruler       " Afficher la position du curseur
-    sy on
+    set ruler                       " Show cursor position
+    syntax on
 " }
 
 " Auto delete trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
 
 
-set nocompatible " it's vim not vi, for Christ sake!
-syntax on " why not?
+" Additional improvements
+set ignorecase                      " Ignore case when searching
+set smartcase                       " Override ignorecase if search contains uppercase
+set wildignore=*.swp,*.bak,*.pyc,*.class,__pycache__/,*.egg-info/
 
 " next function allows you to do completion of words by pressing <Tab>
 function! InsertTabWrapper(direction)

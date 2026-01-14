@@ -58,5 +58,6 @@ Thumbs.db
 .venv
 .vscode/
 venv
+.claude
 
 

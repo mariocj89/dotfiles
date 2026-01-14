@@ -5,6 +5,7 @@
     editor = vim
     excludesfile = ~/.gitignore
     filemode = false
+	autocrlf = input
 [help]
     autocorrect = 1
 [color]
@@ -58,3 +59,5 @@
     enable = true
 [init]
 	defaultBranch = main
+[url "bbgithub:"]
+	insteadof = https://bbgithub.dev.bloomberg.com/

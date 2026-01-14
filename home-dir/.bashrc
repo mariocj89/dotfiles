@@ -113,3 +113,5 @@ title() {
 . ~/.bash.alias
 . ~/.bash.env
 . ~/.bash_prompt
+eval "$(uv generate-shell-completion bash)"
+eval "$(uvx --generate-shell-completion bash)"
